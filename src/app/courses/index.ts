@@ -1,1 +1,1 @@
-export * from './courses.component.ts'
+export * from './courses.component'

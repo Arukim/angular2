@@ -12,6 +12,9 @@ import { ENV_PROVIDERS } from './environment';
 import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
+import {LoginComponent} from './login';
+import {CoursesComponent} from './courses';
+import {CoursesDetailComponent} from './courses/detail';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 
 /**
@@ -21,6 +24,9 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
+    LoginComponent,
+    CoursesComponent,
+    CoursesDetailComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

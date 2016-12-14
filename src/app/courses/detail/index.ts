@@ -1,1 +1,1 @@
-export * from './detail.component.ts'
+export * from './detail.component'
