@@ -15,17 +15,15 @@ import { Component, ViewEncapsulation } from '@angular/core';
   ],
   template: `
     <main>
-      <router-outlet></router-outlet>
+      <div class="container">
+        <router-outlet></router-outlet>
+            
+        <footer>
+        
+        </footer>
+      </div>
     </main>
 
-    <footer>
-      <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
-      <div>
-        <a [href]="url">
-          <img [src]="angularclassLogo" width="25%">
-        </a>
-      </div>
-    </footer>
   `
 })
 export class AppComponent {
