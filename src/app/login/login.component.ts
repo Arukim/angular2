@@ -42,6 +42,8 @@ import {LoginService} from '../services/login';
   
 })
 
+// TODO: better use angular-form-builder
+// https://angular.io/docs/ts/latest/api/forms/index/FormBuilder-class.html
 export class LoginComponent implements OnInit {
   public isValid : boolean;
   public login : string;
