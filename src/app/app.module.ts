@@ -15,7 +15,9 @@ import { AppComponent } from './app.component';
 import {LoginComponent} from './login';
 import {CoursesComponent} from './courses';
 import {CoursesDetailComponent} from './courses/detail';
+import {DateComponent} from './common/date.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
+import { DurationPipe } from './pipes/duration.pipe';
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
@@ -26,7 +28,9 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
     AppComponent,
     LoginComponent,
     CoursesComponent,
-    CoursesDetailComponent
+    CoursesDetailComponent,
+    DateComponent,
+    DurationPipe
   ],
   imports: [ // import Angular's modules
     BrowserModule,

@@ -1,0 +1,36 @@
+<h1>courses</h1>
+<div class="row margined">
+  <div class="col-md-8">
+    <form #fSearch="ngForm" (ngSubmit)="onSearch()">
+      <div>
+        <input type="text" placeholder="name to find" [(ngModel)]="query" name="query">
+        <button type="submit">Find</button>
+      </div>
+    </form>
+  </div>
+  <button class="btn btn-default" (click)="addCourse($event)">Add Course</button>
+</div>
+<div *ngFor="let course of courses">
+  <article class="row course">
+    <div class="col-md-8">
+      <div class="col-md-12">
+        <div class="col-md-4">
+          {{ course.name }}
+        </div>
+        <div class="col-md-4">
+          <p> Duration: {{ course.duration | duration}} </p>
+        </div>
+        <div class="col-md-4">
+          <p class="text-right"> Created: {{ course.created | date:'dd.mm.y'}} </p>
+        </div>
+      </div>
+      <div class="col-md-12">
+        {{ course.description}}
+      </div>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-default" (click)="editCourse(course, $event)"> Edit </button>
+      <button class="btn btn-default" (click)="deleteCourse(course)"> Delete </button>
+    </div>
+  </article>
+</div>

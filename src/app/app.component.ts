@@ -3,6 +3,8 @@
  */
 import { Component, ViewEncapsulation } from '@angular/core';
 
+import { Configuration } from './app.constants';
+
 /*
  * App Component
  * Top Level Component
@@ -10,6 +12,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
+  providers: [Configuration],
   styleUrls: [
     './app.component.css'
   ],
