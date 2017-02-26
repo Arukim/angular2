@@ -16,6 +16,7 @@ import {LoginComponent} from './login';
 import {CoursesComponent} from './courses';
 import {CoursesDetailComponent} from './courses/detail';
 import {DateComponent} from './common/date.component';
+import {DurationComponent} from './common/duration.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { DurationPipe } from './pipes/duration.pipe';
 
@@ -30,6 +31,7 @@ import { DurationPipe } from './pipes/duration.pipe';
     CoursesComponent,
     CoursesDetailComponent,
     DateComponent,
+    DurationComponent,
     DurationPipe
   ],
   imports: [ // import Angular's modules
